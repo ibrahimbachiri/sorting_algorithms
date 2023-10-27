@@ -14,14 +14,13 @@ void quick_sort(int *array, size_t size)
 
 	quick_s(array, 0, size - 1, size);
 }
-
 /**
- * parition - partition
- * @array: array
- * @lo: lower
- * @hi: higher
- * @size: array's size
- * Return: i
+ * partition - using Lomuto partition scheme for quicksort
+ * @array: pointer to array
+ * @size: size of array
+ * @low: left most value
+ * @high: right most value
+ * Return: pivot value
  */
 int partition(int *array, int lo, int hi, size_t size)
 {
